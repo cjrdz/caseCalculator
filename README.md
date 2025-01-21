@@ -1,5 +1,4 @@
 # Schedule Calculator Application Documentation
-
 ## Overview
 The Schedule Calculator is a Python application designed to manage support cases, allowing users to add, update, delete, and view cases. The application provides a user-friendly interface built with Tkinter and ttkbootstrap, enabling users to manage case details and calculate follow-up and strike schedules based on severity levels.
 
@@ -16,33 +15,26 @@ The Schedule Calculator is a Python application designed to manage support cases
 4. Install the required packages:
    ```bash
    pip install ttkbootstrap
+   pip install PyInstaller
    ```
-5. Run the application:
+5. Configure the environment:
+   - Add Python Scripts directory to your system PATH:
+     `C:\Users\<username>\AppData\Local\Programs\Python\Python313\Scripts`
+   - Replace `<username>` with your Windows username
+6. Run the application:
    ```bash
    python src/main.py
    ```
+
 ## Creating an Executable
+To create a standalone executable for the Schedule Calculator application:
 
-To create a standalone executable for the Schedule Calculator application, you can use the `auto-py-to-exe` package. Follow these steps:
-
-1. Install `auto-py-to-exe`:
-    ```bash
-    pip install auto-py-to-exe
-    ```
-
-2. Run `auto-py-to-exe`:
-    ```bash
-    auto-py-to-exe
-    ```
-
-3. In the `auto-py-to-exe` interface:
-    - Select `One File` and `Window Based (hide the console)`.
-    - In the `Script Location` field, browse and select `src/main.py`.
-    - Configure other settings as needed.
-
-4. Click `Convert .py to .exe` to generate the executable.
-
-The generated executable will be located in the `output` directory specified in the `auto-py-to-exe` interface.
+1. Open a terminal in your project directory
+2. Run the following command:
+   ```bash
+   python -m PyInstaller --onefile --noconsole src/main.py
+   ```
+3. The executable will be generated in the `dist` directory
 
 ## Usage
 - Launch the application using the command above.
