@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "schedule_calculator"
+version = "0.1.0"
+description = "A Python application designed to manage support cases and calculate follow-up and strike schedules."
+authors = ["Your Name <jonathanrdzdev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+numpy = "^1.21.0" 

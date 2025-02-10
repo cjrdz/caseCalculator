@@ -50,7 +50,7 @@ To create a standalone executable for the Schedule Calculator application:
 - **src/ui/case_view.py**: Contains the `CaseViewDialog` class, which displays case details in a dialog.
 - **src/models/case.py**: Defines the `Case` data model, representing a support case.
 - **src/utils/storage.py**: Manages loading and saving cases to persistent storage (JSON file).
-- **src/utils/scheduler.py**: Contains the `ScheduleCalculator` class, which calculates follow-up and strike schedules based on case details.
+- **src/utils/scheduler.py**: Contains the `ScheduleCalculator` class, which calculates follow-up and strike schedules based on case details. **Note:** The recovery period now occurs after the second strike is sent, and the third strike is labeled as the Last Quality Response (LQR).
 - **src/config.py**: Contains configuration settings for the application, such as weekdays, case types, and file paths.
 
 ## License
